@@ -1,0 +1,57 @@
+{
+  "preset": "standard",
+  "split": "random_60_40",
+  "arch": "resnet",
+  "n_train": 3714,
+  "n_test": 2476,
+  "gan_iterations": 10000,
+  "seeds": [
+    42
+  ],
+  "recogniser": {
+    "real": {
+      "acc": "98.26",
+      "macro_f1": "98.21",
+      "runs": [
+        {
+          "acc": 98.26332794830371,
+          "macro_f1": 98.21220017448275
+        }
+      ]
+    },
+    "real+forged": {
+      "acc": "98.22",
+      "macro_f1": "98.17",
+      "runs": [
+        {
+          "acc": 98.22294022617125,
+          "macro_f1": 98.16926172747151
+        }
+      ]
+    }
+  },
+  "forger": {
+    "forgery_accuracy": 91.56,
+    "forgery_accuracy_per_letter": {
+      "a": 76.8,
+      "aa": 94.2,
+      "i": 69.1,
+      "ii": 100.0,
+      "u": 100.0,
+      "uu": 98.1,
+      "e": 93.7,
+      "ee": 97.1,
+      "ai": 97.1,
+      "o": 87.4,
+      "oo": 85.9,
+      "au": 99.5
+    },
+    "fd_forged_vs_real_test": 22.46,
+    "fd_real_train_vs_real_test": 1.22,
+    "diversity_vs_real": 1.612
+  },
+  "detector": {
+    "roc_auc_real_test_vs_forged": 1.0,
+    "accuracy_at_zero": 99.41
+  }
+}
