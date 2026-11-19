@@ -52,7 +52,9 @@ The forgeries are readable, but the Detector can still tell every one apart from
 
 ## Running the notebook
 
-Open `code/Tamil_Uyir_GAN_Forger_vs_Detector.ipynb` in Google Colab, set the runtime to a GPU and choose Run all. The notebook downloads the dataset itself. A full run takes about an hour, so don't train live during the talk; show the saved outputs instead. The trained weights (`forger_G_ema.pt` and `detector_D.pt`) are not in this repository, because the notebook writes them when it runs.
+The notebook here is saved with all its outputs, so GitHub shows the training logs, metrics and figures without running anything. The original lives on [Google Colab](https://colab.research.google.com/drive/1KDsl0yTZ1E2X0sKJOCZ4dYcrOhvUmneW).
+
+To run it yourself, open `code/Tamil_Uyir_GAN_Forger_vs_Detector.ipynb` in Google Colab, set the runtime to a GPU and choose Run all. The notebook downloads the dataset itself. A full run takes about an hour, so don't train live during the talk; show the saved outputs instead. The trained weights (`forger_G_ema.pt` and `detector_D.pt`) are not in this repository, because the notebook writes them when it runs.
 
 ## References
 
