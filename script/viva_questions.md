@@ -6,6 +6,7 @@ Answer in one or two sentences, then stop. "Good question, I'd need to check tha
 
 | Question | Short answer |
 |---|---|
+| What did you change from a standard DCGAN, and why? | My first version was close to DCGAN and gave poor letters. I made it conditional (conditional batch norm, projection head), used skip-z and a mode-seeking term against mode collapse, spectral norm, hinge loss and TTUR so the Detector couldn't overpower the Forger, DiffAugment against memorising 3,714 letters, upsample-then-convolve against checkerboards, and an EMA Forger. The full table is in speech_10min.md. |
 | Why is it called adversarial? | The two networks are opponents. My Forger wins when the Detector scores a forgery as real; the Detector wins when it catches it. |
 | Supervised or unsupervised? | Generative and mostly unsupervised: there is no target image for each output. The letter labels only say which letter to draw, which makes it a conditional GAN. |
 | What is z in your model? | 120 random numbers from a normal distribution, split into 6 slices of 20. The first slice goes into the linear layer and one slice goes into each of the 5 blocks (skip-z). |
