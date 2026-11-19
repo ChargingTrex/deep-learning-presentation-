@@ -1,6 +1,6 @@
 # Deep learning presentation: GANs and YuNet
 
-Sathya's Sai University deep learning presentation (10 minutes, 23 slides).
+Sathya's Sai University deep learning presentation (10 minutes, 24 slides).
 
 - **Group A, GAN:** a conditional GAN that forges the 12 handwritten Tamil uyir letters (அ to ஔ). The Forger draws a letter on request, and the Detector tries to tell it apart from real handwriting.
 - **Group B, YuNet:** a face detector with 75,856 parameters that finds faces in about 1.6 ms on a CPU.
@@ -10,7 +10,7 @@ Sathya's Sai University deep learning presentation (10 minutes, 23 slides).
 | Folder | Contents |
 |---|---|
 | `slides/` | `GAN_YuNet_deck.html` is the animated deck, and `GAN_YuNet_backup_slides.pdf` is a static copy of every slide |
-| `script/` | `speech_10min.md` is the 10-minute speech, one line per click, with a table of what the GAN changes from a standard DCGAN and why. `viva_questions.md` has likely questions with short answers |
+| `script/` | `speech_10min.md` is the 10-minute speech, one line per click, with a table of what the GAN changes from a standard DCGAN and why, and in-depth notes on conditional batch norm, spectral normalisation, mode collapse and how accuracy was measured. `viva_questions.md` has likely questions with short answers |
 | `code/` | `Tamil_Uyir_GAN_Forger_vs_Detector.ipynb` is the full GAN project notebook (Colab) |
 | `code/results/` | `results.json` and `results.md` hold the final numbers. `figures/` holds the notebook's output figures, and `forged_letters.zip` has sample forgeries for each letter |
 | `code/warmup/` | `GAN_MNIST.ipynb` is the small MNIST GAN behind the digit images on slides 2 and 3 |

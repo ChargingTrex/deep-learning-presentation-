@@ -23,7 +23,7 @@ Answer in one or two sentences, then stop. "Good question, I'd need to check tha
 | What is TTUR? | Two time-scale update rule: the Detector learns at 4e-4 and the Forger at 1e-4, so the Detector stays a useful teacher. |
 | What is EMA? | A moving average of the Forger's weights. The averaged copy draws the final letters, which are smoother and steadier than the latest weights. |
 | What is mode collapse? Did you see it? | The Forger makes only a few shapes. I hit it, and a mode-seeking term (image difference divided by noise difference) fixed it. Diversity is now 1.61 times real handwriting. |
-| How do you evaluate a GAN? | There is no single accuracy. I used forgery accuracy (91.6% read correctly by a recogniser trained on real letters), Fréchet distance (22.5, real-vs-real floor 1.2), diversity (1.61) and the Detector's AUC. |
+| How did you measure accuracy? | With a separate judge: a ResNet-18 trained only on real letters (98.3% on the real test letters) reads 2,476 forgeries it has never seen. 91.6% are read as the letter I asked for. The notebook also reports Fréchet distance, diversity and the Detector's AUC. |
 | The Detector's AUC is 1.0. Is that bad? | It means the Detector still separates every forgery from real letters: the forgeries are readable but not yet indistinguishable. That is the honest limit after 10,000 steps. |
 | Did forged letters help the recogniser? | No: 98.26% with real letters only, 98.22% with 1,800 forgeries added. Real data already saturates it; forgeries may help when real data is scarce. |
 | Why are இ and அ the hardest? | They are the loopiest letters, where a small change in a loop or curve changes the letter: 69.1% and 76.8% read correctly. |
