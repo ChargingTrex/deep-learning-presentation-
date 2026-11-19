@@ -9,7 +9,7 @@ Sathya's Sai University deep learning presentation (10 minutes, 24 slides).
 
 | Folder | Contents |
 |---|---|
-| `slides/` | `GAN_YuNet_deck.html` is the animated deck, and `GAN_YuNet_backup_slides.pdf` is a static copy of every slide |
+| `slides/` | `GAN_YuNet_deck.html` is the animated deck. `GAN_YuNet_presentation.pptx` is the PowerPoint version, with each click as a build and the script in the speaker notes. `GAN_YuNet_speaker_notes.pdf` has one page per slide with its script below. `GAN_YuNet_backup_slides.pdf` is a static copy of every slide |
 | `script/` | `speech_10min.md` is the 10-minute speech, one line per click, with a table of what the GAN changes from a standard DCGAN and why, and in-depth notes on conditional batch norm, spectral normalisation, mode collapse and how accuracy was measured. `viva_questions.md` has likely questions with short answers |
 | `code/` | `Tamil_Uyir_GAN_Forger_vs_Detector.ipynb` is the full GAN project notebook (Colab) |
 | `code/results/` | `results.json` and `results.md` hold the final numbers. `figures/` holds the notebook's output figures, and `forged_letters.zip` has sample forgeries for each letter |
